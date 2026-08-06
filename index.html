@@ -2,21 +2,39 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
+	<title>Accessible Photo Gallery</title>
 	<link rel="stylesheet" href="css/gallery.css">
-	<script src = "js/gallery.js"></script>
+	<script src="js/gallery.js"></script>
 </head>
-<body>
-	
-	<div id = "image">
-		Hover over an image below to display here.
+<body onload="addTabFocus()">
+
+	<div id="image">
+		Hover or focus over an image below to display here.
 	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+	<!-- Image 1 -->
+	<img class="preview" alt="Styling with a Bandana" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" 
+		 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+	<!-- Image 2 -->
+	<img class="preview" alt="With My Boy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" 
+		 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+	<!-- Image 3 -->
+	<img class="preview" alt="Young Puppy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
+		 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+	<!-- Image 4 -->
+	<img class="preview" alt="Playful Dog in Park" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500" 
+		 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+	<!-- Image 5 -->
+	<img class="preview" alt="Cute Puppy Resting" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=500" 
+		 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+	<!-- Image 6 -->
+	<img class="preview" alt="Happy Dog Running" src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500" 
+		 onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
 
 </body>
 </html>
